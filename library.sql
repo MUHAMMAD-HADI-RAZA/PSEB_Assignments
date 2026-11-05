@@ -9,15 +9,16 @@ CREATE TABLE books (
     price DECIMAL(10, 2)
 );
 
+-- Sample book prices are in Pakistani rupees (PKR).
 INSERT INTO books (id, title, author, year, price) VALUES
-    (1, 'The Pragmatic Programmer', 'Andrew Hunt and David Thomas', 1999, 650.00),
-    (2, 'Clean Code', 'Robert C. Martin', 2008, 720.00),
-    (3, 'The Hobbit', 'J. R. R. Tolkien', 1937, 450.00),
-    (4, '1984', 'George Orwell', 1949, 380.00),
-    (5, 'Design Patterns', 'Erich Gamma et al.', 1994, 850.00),
-    (6, 'Pride and Prejudice', 'Jane Austen', 1813, 300.00),
-    (7, 'Refactoring', 'Martin Fowler', 1999, 600.00),
-    (8, 'Animal Farm', 'George Orwell', 1945, 275.00);
+    (1, 'A Case of Exploding Mangoes', 'Mohammed Hanif', 2008, 1200.00),
+    (2, 'The Reluctant Fundamentalist', 'Mohsin Hamid', 2007, 1100.00),
+    (3, 'Moth Smoke', 'Mohsin Hamid', 2000, 950.00),
+    (4, 'Kartography', 'Kamila Shamsie', 2002, 1000.00),
+    (5, 'The Crow Eaters', 'Bapsi Sidhwa', 1978, 850.00),
+    (6, 'Ice-Candy-Man', 'Bapsi Sidhwa', 1988, 900.00),
+    (7, 'The Golden Legend', 'Nadeem Aslam', 2017, 1300.00),
+    (8, 'I Am Malala', 'Malala Yousafzai and Christina Lamb', 2013, 1500.00);
 
 -- Show books with a price above 500.
 SELECT * FROM books
@@ -33,5 +34,5 @@ FROM books;
 
 -- Update the price of the book with id 1.
 UPDATE books
-SET price = 675.00
+SET price = 1250.00
 WHERE id = 1;

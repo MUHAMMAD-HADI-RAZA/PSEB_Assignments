@@ -1,7 +1,7 @@
 import requests
 
 
-USERNAMES = ("torvalds", "gaearon", "sindresorhus")
+USERNAMES = ("hadi", "raza", "muhammad")
 GITHUB_USER_URL = "https://api.github.com/users/{}"
 
 
